@@ -1,0 +1,122 @@
+<html data-sceneid="speedcontrol-dynamic">
+<head>
+    <link href="css/common.css" rel="stylesheet" title="Race_2player_4_3"/>
+    <link href="css/common.css" rel="alternate stylesheet" title="intermission"/>
+    <link href="css/Intermission.css" rel="alternate stylesheet" title="intermission"/>
+
+    <script src="../nodecg-speedcontrol/components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="../nodecg-speedcontrol/components/jquery/dist/jquery.min.js"></script>
+    <script src="../nodecg-speedcontrol/js/animation.js"></script>
+    <script src="../nodecg-speedcontrol/js/speedcontrol.js"></script>
+    <script src="../nodecg-speedcontrol/js/editmode.js"></script>
+    <script src="js/dynamic.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/cupertino/jquery-ui.css" />
+</head>
+<body>
+<div id="window-container">
+    <div id="positionDebug" class="positionable">
+        <div id="positionDebugText">
+            X: 100
+            Y: 100
+        </div>
+        <div id="editModeButtons">
+            <button id="generateCSSContentButton">Save Layout</button>
+            <button id="resetCSSContentButton">Reset Layout</button>
+        </div>
+    </div>
+    <div id="marathonLogo" class="positionable resizable"></div>
+
+    <div id="timerContainer" class="positionable resizable">
+        <div id="timer">
+        </div>
+        <div id="runInformationGameEstimate">
+        </div>
+    </div>
+    <div id="runInformationContainer" class="positionable resizable">
+        <div id="runInformationLogo">
+        </div>
+        <div id="runInformationFields">
+            <div id="runInformationGameName">
+            </div>
+            <div id="runInformationGameCategory">
+            </div>
+            <div id="runInformationGameSystem">
+            </div>
+        </div>
+    </div>
+    <div id="comingUpRun" class="positionable resizable">
+        <div id="comingUp">
+            Coming up..
+        </div>
+        <div id="comingUpGame"> </div>
+        <div id="comingUpCategory"> </div>
+        <div id="comingUpSystem"> </div>
+        <div id="comingUpPlayer"> </div>
+    </div>
+    <div id="justMissedRun" class="positionable resizable">
+        <div id="justMissed">
+            You just missed..
+        </div>
+        <div id="justMissedGame"> </div>
+        <div id="justMissedCategory"> </div>
+        <div id="justMissedSystem"> </div>
+        <div id="justMissedPlayer"> </div>
+    </div>
+    <div id="informationMarquee" class="positionable">
+    </div>
+
+    <div id="gameCapture1" class="positionable gameCapture" aspect-ratio="16:9">
+    </div>
+    <div id="gameCapture2" class="positionable gameCapture" aspect-ratio="16:9">
+    </div>
+    <div id="gameCapture3" class="positionable gameCapture" aspect-ratio="16:9">
+    </div>
+    <div id="gameCapture4" class="positionable gameCapture" aspect-ratio="16:9">
+    </div>
+
+    <div id="runner1TimerFinishedContainer" class="runnerTimerFinishedContainer positionable">
+        <div class="finishedLogo"></div>
+        <div class="dummyTextable runnerTimerFinished"></div>
+    </div>
+    <div id="runner2TimerFinishedContainer" class="runnerTimerFinishedContainer positionable">
+        <div class="finishedLogo"></div>
+        <div class="dummyTextable runnerTimerFinished"></div>
+    </div>
+    <div id="runner3TimerFinishedContainer" class="runnerTimerFinishedContainer positionable">
+        <div class="finishedLogo"></div>
+        <div class="dummyTextable runnerTimerFinished"></div>
+    </div>
+    <div id="runner4TimerFinishedContainer" class="runnerTimerFinishedContainer positionable">
+        <div class="finishedLogo"></div>
+        <div class="dummyTextable runnerTimerFinished"></div>
+    </div>
+
+    <div id="player1Container" class="playerContainer positionable resizable">
+        <div class="runnerLogo">
+            <img class="twitchLogo" src="/graphics/nodecg-speedcontrol/images/twitchlogo.png">
+        </div>
+        <div class="runnerInfo"> </div>
+    </div>
+    <div id="player2Container" class="playerContainer positionable resizable">
+        <div class="runnerInfo"> </div>
+        <div class="runnerLogo">
+            <img class="twitchLogo" src="/graphics/nodecg-speedcontrol/images/twitchlogo.png">
+        </div>
+    </div>
+    <div id="player3Container" class="playerContainer positionable resizable">
+        <div class="runnerLogo">
+            <img class="twitchLogo" src="/graphics/nodecg-speedcontrol/images/twitchlogo.png">
+        </div>
+        <div class="runnerInfo"> </div>
+    </div>
+    <div id="player4Container" class="playerContainer positionable resizable">
+        <div class="runnerInfo"> </div>
+        <div class="runnerLogo">
+            <img class="twitchLogo" src="/graphics/nodecg-speedcontrol/images/twitchlogo.png">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
